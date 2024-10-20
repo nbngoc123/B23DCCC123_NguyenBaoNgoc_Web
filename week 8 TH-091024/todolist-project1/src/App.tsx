@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 
+interface Task {
+  id: number;
+  content: string;
+  completed: boolean;
+  days: string[];
+}
+
 const daysOfWeek = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'];
 
 const TodoList = () => {
-  const [tasks, setTasks] = useState<{ id: number; content: string; completed: boolean; days: string[] }[]>([]);
+  const [tasks, setTasks] = useState<Task[]>([]);
   const [content, setContent] = useState('');
   const [selectedDays, setSelectedDays] = useState<string[]>([]);
   const [filter, setFilter] = useState('all');
