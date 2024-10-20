@@ -39,13 +39,31 @@ button {
   margin-left: 10px;
 }
 
-#output {
+#message-container {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
   background-color: white;
   min-width: 300px;
-  white-space: pre-wrap; /* Allow line breaks */
+  max-width: 800px; /* Limit width */
+  overflow-y: auto; /* Add scrollbar if content overflows */
+  max-height: 400px; /* Limit height and add scroll */
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user {
+  background-color: #e0f7fa; /* Light blue */
+  align-self: flex-end; /* Align to right */
+}
+
+.assistant {
+  background-color: #f1f8e9; /* Light green */
+  align-self: flex-start; /* Align to left */
 }
 </style>
 </head>
@@ -55,15 +73,19 @@ button {
     <input type="text" name="prompt" placeholder="Enter your prompt">
     <button type="submit">Send</button>
   </form>
-  <div id="output"></div>
+  <div id="message-container"></div>
 
   <script>
     const form = document.querySelector('form');
-    const outputDiv = document.getElementById('output');
+    const messageContainer = document.getElementById('message-container');
 
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const prompt = form.prompt.value;
+
+      // Display user message immediately
+      displayMessage(prompt, 'user');
+
       const response = await fetch('/', {
         method: 'POST',
         headers: {
@@ -71,9 +93,18 @@ button {
         },
         body: `prompt=${prompt}`,
       });
-      const text = await response.text();
-      outputDiv.innerText = text;
+      const data = await response.json();
+      displayMessage(data.response, 'assistant');
     });
+
+    function displayMessage(text, role) {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add('message', role);
+      messageDiv.textContent = text;
+      messageContainer.appendChild(messageDiv);
+      // Scroll to bottom
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+    }
   </script>
 </body>
 </html>
