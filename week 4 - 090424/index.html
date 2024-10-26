@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EX DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script language="javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="contain-title songdong">
+       <h1 id="title-header">Tôi không biết web là gì <br>
+            <p id="title">me too</p>
+            <div id="ex-3">
+                <ul id="list">
+                    <li>bird</li>
+                </ul>
+            </div>
+
+            <div id="ex-6">
+                <p>EX-6</p>
+                <button onclick="btn()">Click</button>
+                <button onclick="change()">Change</button>
+
+                <p id="demo"></p>
+                
+        </div>
+
+        <div id="table-container">
+            <button oneclick="table()">Table</button>
+        </div>
+
+
+    <script>
+        var title = document.getElementById('title').innerText = 'hello, DOM';
+        alert(title);
+
+
+        const listElement = document.getElementById('list');
+        const liElement = document.createElement('li');
+        liElement.innerHTML = "bird";
+        listElement.appendChild(liElement);
+
+        function btn() {
+            const element = document.getElementById('demo'); 
+            element.innerHTML += "<p class='conca'>Zent Group</p>";
+            
+
+		};
+        function change() {
+            change = document.getElementsByClassName('conca');
+            change.setAttribute('conca', 'con gà ăn con cá')
+
+        };
+        // function table() {
+                
+            table = document.createElement('table');
+            table.border = 1;
+            for (let i = 0; i < 3; i++) {
+                const tr = document.createElement('tr');
+                for (let k = 0; k < 3; k++) {
+                    const td = document.createElement('td');
+                    td.innerHTML = 'table';
+                    tr.append(td);
+                }
+                table.append(tr);
+                
+            }
+            const container = document.getElementById('table-container');
+            container.append(table);
+
+        // } 
+            container.setAttribute('class', 'tôi đang bay');
+            container.id = 'new bảng';
+        // Đếm số tag div
+
+
+
+        
+
+    </script>
+</body>
+</html>

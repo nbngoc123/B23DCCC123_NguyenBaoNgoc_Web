@@ -1,0 +1,158 @@
+.task-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  background: linear-gradient(to right, #e0e470, #cbc743); /* Gradient background */
+
+}
+
+.task-title {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color:#3c4851 ; /* Dark grey */
+  text-shadow :2px -1px  4px rgb(149, 165, 175); /* Drops shadow effect */
+  font-family:'Roboto', sans-serif ; /* Roboto is a font from Google Fonts */
+}
+
+.task-content {
+  display: flex; /* Display flex for container */  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-description {
+  font-style: italic;
+  margin-left: 20px;
+  width: 70%; /* Set width to 70% */
+  overflow-wrap: break-word; /* Allow words to break */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+  word-wrap: break-word; /* Allow words to break */
+  overflow-y: auto; /* Enable vertical scroll */
+  background-color: #f0eada;
+  border: #0056b312;  /* Border color for hover */  
+    padding :15px ;
+  border-radius:12px ; /* Add border radius for rounded corners */  
+}
+
+.task-process {
+  position: relative; /* Position the progress bar */  
+    display : inline-block ;
+  margin-top: 8px;
+  white-space: nowrap;
+  border-radius: 10px;  /* Add border radius for rounded corners */  
+  color: #c2eabf;
+    padding: 15px;
+
+}
+.task-process:hover {
+  background-color: #e8eddf; /* Change background color on hover */
+  background: linear-gradient(to right, #e4ed28, #dcea1d); /* Gradient background */
+
+}
+.completed {
+    color:#85cf24 ; /* Green */  
+     background : #ffffff;
+     font-weight: bold; /* Make the text bold */
+     padding: 10px 15px; /* Add padding */
+     border-radius: 5px; /* Add rounded corners */
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-color: #86e254; /* Keep the original green background */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+
+.task-process:hover {
+  background-color: #e8eddf; /* Change background color on hover */
+}
+
+.task-status {
+  font-weight: bold;
+
+  padding: 8px 15px; /* Increased padding for visual prominence */
+  border-radius: 6px; /* Slightly increased border radius */
+  color: white;
+  font-size: 1.1em; /* Increased font size to make it stand out */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+  /* Disable text selection and copying */
+  user-select: none; 
+}
+
+
+.task-duration {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #555;
+  background-color: #f0eada; /* Add background color */
+  border: 1px solid #ccc;  /* Add border */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.task-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 15px;
+  color: #f8f9fa;
+  font-size: 1em; /* Adjust font size if needed */
+  font-weight: bold; /* Make the time stand out */
+}
+
+.task-time span { /* Add a span to wrap the time value */
+  background-color: #f0eada; /* Add background color */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.task-time span:hover {
+  background-color: #b0c6dc2b; /* Change background color on hover */
+}
+
+.task-due {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 22px;
+  font-style: italic;
+  background-color: #f0eada; /* Add background color */
+  border: 1px solid #ccc;  /* Add border */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.task-due-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.task-detail {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.task-detail:hover {
+  background-color: #0056b3;
+}
+
+.task-control {
+  background: #f0eada;
+  padding: 3em;
+  text-align: center;
+  margin-top: -1.67em;
+}

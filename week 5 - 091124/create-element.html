@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EX DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script language="javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="title-h1">
+       <h1 id="title-header">A Survey of Mamba<br>
+        <h2>Transformers is all you need!</h2>
+            <div id="Abstract">
+                <button onclick="btn()">Click</button>
+
+                <p id="content"></p>  
+        </div>
+
+        <div id="table-container">
+            <button oneclick="table()">Table</button>
+        </div>
+
+
+    <script>
+        const listElement = document.getElementById('list');
+        const liElement = document.createElement('li');
+        liElement.innerHTML = "bird";
+        listElement.appendChild(liElement);
+
+        function btn() {
+            const context = document.getElementById('content'); 
+            context.innerHTML += "<p class='conca'>Gần đây, một kiến trúc mới lạ có tên Mamba, lấy cảm hứng từ các mô hình không gian trạng thái cổ điển (SSM), đã nổi lên như một giải pháp thay thế đầy hứa hẹn để xây dựng các mô hình nền tảng, cung cấp khả năng mô hình hóa tương đương với Transformers trong khi vẫn duy trì khả năng mở rộng gần tuyến tính liên quan đến chiều dài chuỗi.</p>";
+            context.className = 'mamba-model'
+            context.style = 'color: blue; font-size: 23px'
+
+		};
+  
+        // function table() {
+                
+            table = document.createElement('table');
+            table.border = 1;
+            for (let i = 0; i < 3; i++) {
+                const tr = document.createElement('tr');
+                for (let k = 0; k < 3; k++) {
+                    const td = document.createElement('td');
+                    td.innerHTML = 'table';
+                    tr.append(td);
+                }
+                table.append(tr);
+                
+            }
+            const container = document.getElementById('table-container');
+            container.append(table);
+
+        // } 
+            container.setAttribute('class', 'tôi đang bay');
+            container.id = 'new bảng';
+
+
+
+    </script>
+</body>
+</html>

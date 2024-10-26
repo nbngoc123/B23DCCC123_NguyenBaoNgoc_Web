@@ -1,0 +1,27 @@
+.note-container {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.agent {
+  background-color: lightblue;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.analysis {
+  border: 1px solid gray;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.note-container > div:first-child {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.agent {
+  margin: auto; /* Push agent to the right */
+  padding:auto ; /* Auto-padding for both left and top/right */
+} 
+  
