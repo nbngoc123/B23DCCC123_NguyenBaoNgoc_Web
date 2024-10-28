@@ -1,0 +1,170 @@
+/* AddTodoItem.css */
+.add-todo-form {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="number"] {
+  max-width: 100px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.add-todo-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.cancel-button  {
+  background-color: #dc3545; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-left: 5px; /* Add some space between buttons */
+  font-size: 16px;
+}
+
+.cancel-button:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}
+.submit-cancel-button {
+  background-color: #22de61; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-left: 10px; /* Add some space between buttons */
+  font-size: 16px
+}
+.submit-cancel-button:hover {
+  background-color: #15c40f; /* Darker shade on hover */
+}
+
+.from-controler {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+.advance-button {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+    padding: 3px 8px;
+    background-color: transparent; /* Transparent background */
+    color: #007BFF; /* Subtle blue text */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 4px;
+    margin-bottom: 24px;
+}
+.advance-button:hover {
+  color: #085fbc; /* Darker shade for hover effect */
+  background-color: #f1ebebbb; 
+  border-radius: 5px
+}
+
+.time-value {
+  font-size: 0.9em;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+
+
+
+
+
+.form-advance {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 15px; /* Space between fields */
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-advance .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-advance label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-advance input[type="number"],
+.form-advance input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-advance input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 5px;
+}
+
+/* Full-width for single-column items */
+.form-advance .form-group-full {
+  grid-column: span 2;
+}

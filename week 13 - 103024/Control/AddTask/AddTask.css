@@ -1,0 +1,20 @@
+.add-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add some spacing */
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Example blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
