@@ -1,0 +1,27 @@
+Trong thực tế, `useReducer` trong React **chắc chắn được sử dụng**, nhưng có thể không phổ biến bằng `useState`. 
+
+Dưới đây là một số lý do tại sao `useReducer` có thể được lựa chọn và những trường hợp nó thực sự hữu ích:
+
+**Khi nào nên dùng `useReducer`?**
+
+* **Quản lý state phức tạp:** Khi state của component có nhiều trường dữ liệu liên quan với nhau và logic cập nhật state trở nên phức tạp, `useReducer` giúp tổ chức code rõ ràng hơn bằng cách tách biệt logic xử lý state vào reducer function.
+* **State logic phức tạp:**  Khi logic cập nhật state liên quan đến nhiều bước, điều kiện phức tạp, `useReducer` giúp việc quản lý logic này dễ dàng và dễ debug hơn.
+* **Cải thiện performance:** Trong một số trường hợp, `useReducer` có thể giúp cải thiện performance bằng cách giảm số lần re-render không cần thiết.
+* **Pattern quen thuộc:**  Nếu bạn đã quen với các pattern như Redux, việc sử dụng `useReducer` sẽ dễ dàng hơn vì nó tuân theo mô hình tương tự.
+* **Chia sẻ state logic:** `useReducer` có thể được sử dụng để chia sẻ state logic giữa các component khác nhau.
+
+**Khi nào nên dùng `useState`?**
+
+* **Quản lý state đơn giản:** Khi state của component chỉ có một vài trường dữ liệu đơn giản và logic cập nhật state không quá phức tạp, `useState` là lựa chọn đơn giản và hiệu quả hơn.
+
+**Tóm lại:**
+
+`useReducer` là một công cụ mạnh mẽ để quản lý state trong React, đặc biệt là khi bạn gặp phải state phức tạp. Tuy nhiên, không phải lúc nào cũng cần thiết phải sử dụng `useReducer`.  `useState` vẫn là lựa chọn tốt cho các trường hợp đơn giản. Việc lựa chọn giữa `useState` và `useReducer` phụ thuộc vào độ phức tạp của ứng dụng và sở thích cá nhân của bạn.
+
+**Ví dụ thực tế:**
+
+* **Giỏ hàng:**  Quản lý trạng thái của giỏ hàng với các thao tác thêm, xóa, cập nhật số lượng sản phẩm.
+* **Form đăng ký:**  Xử lý các bước trong form đăng ký, validate dữ liệu, hiển thị thông báo lỗi.
+* **Ứng dụng todo list:** Quản lý danh sách công việc, trạng thái hoàn thành, lọc công việc.
+
+Hy vọng những thông tin này hữu ích cho bạn!
