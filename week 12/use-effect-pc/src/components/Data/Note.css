@@ -1,0 +1,69 @@
+.note-container {
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Light gray background */
+  transition: transform 0.2s ease; /* Add a subtle transition effect */
+}
+
+.note-container:nth-child(even) {
+  background-color: #e9f6ff; /* A softer, more appealing alternate background */
+}
+
+.note-container:hover {
+  transform: translateY(-5px); /* Lift the note slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+.note-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333; /* Darker title for better contrast */
+}
+
+.note-content {
+  margin-bottom: 15px;
+}
+
+.note-content p {
+  font-size: 16px;
+  line-height: 1.6; /* Improved readability with increased line height */
+  color: #444; 
+}
+
+.note-status {
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}
+
+.note-recommendation {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2; /* Subtle background for the recommendation section */
+}
+
+.note-recommendation h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50; /* A more visually appealing color for the heading */
+}
+
+.note-recommendation p {
+  font-size: 16px;
+  color: #555;
+}
+
+.note-dates {
+  font-size: 14px;
+  color: #999;
+}
+
+.note-dates p {
+  margin: 0;
+}
