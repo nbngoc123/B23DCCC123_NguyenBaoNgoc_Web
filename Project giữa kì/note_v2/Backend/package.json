@@ -1,0 +1,21 @@
+{
+  "name": "connect_mysql",
+  "version": "1.0.0",
+  "main": "src/app.js",
+    "scripts": {
+    "start": "nodemon app.js && node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "nodemon": "^3.1.7",
+    "openai": "latest"
+  },
+  "description": ""
+}

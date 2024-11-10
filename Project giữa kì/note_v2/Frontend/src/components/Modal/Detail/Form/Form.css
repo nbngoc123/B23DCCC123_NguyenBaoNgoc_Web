@@ -1,0 +1,31 @@
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+.delete {
+  color: red;
+}
+.advance-button.delete:hover {
+  color: #de325d; /* Darker shade for hover effect */
+  background-color: #eddbdbbb; 
+  border-radius: 5px
+}
+
+.form-group label[for="id"] {
+  font-weight: bold;
+  color: #125121;
+  margin-bottom: 10px; /* Added for improved spacing */
+  display: inline-block; /* Ensure it's aligned properly with text */
+}
+
+.form-group label[for="id"]:hover {
+  color: #118c55; /* Darker blue for hover effect */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 2s ease;
+  background-color: #f0eada; /* Added for background color change */
+  border-radius: 5px; 
+}

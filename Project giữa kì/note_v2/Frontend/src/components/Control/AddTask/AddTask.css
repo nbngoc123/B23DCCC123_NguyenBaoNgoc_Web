@@ -1,0 +1,34 @@
+.add-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add some spacing */
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  background-color: #abe118; /* Example blue color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(to right, #abe118, #e0e470); /* Gradient background */
+  border: 1px solid #7e7d7d; /* Adjust the border color as needed */
+}
+
+/* Position the button in the bottom left corner */
+.add-task-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* Change right to left to position on the left side */
+}
+.add-task-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  background: linear-gradient(to right, #0056b3, #39c16b); /* Gradient background */
+
+}
+.add-task-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  background: linear-gradient(to right, #0056b3, #39c16b); /* Gradient background */
+
+}
